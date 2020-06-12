@@ -25,6 +25,7 @@
   "homepage": "https://github.com/Ray-Garraty/frontend-project-lvl1#readme",
   "dependencies": {
     "eslint-plugin-import": "^2.21.2",
+    "install-peerdeps": "^2.0.3",
     "readline-sync": "^1.4.10",
     "typescript": "^3.9.5"
   },
