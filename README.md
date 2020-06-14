@@ -2,3 +2,4 @@
 
 Video confirming the successful completion of the Step #5: https://asciinema.org/a/339175
 Video confirming the successful completion of the Step #6: https://asciinema.org/a/339373
+Video confirming the successful completion of the Step #7: https://asciinema.org/a/XkFGlxuPtWUGTPcdf90jhLHS8
