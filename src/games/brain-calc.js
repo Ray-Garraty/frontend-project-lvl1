@@ -1,15 +1,11 @@
-#!/usr/bin/env node
-
-import { greeting, game } from '../../src/index.js';
-
-const userName = greeting();
+import generateRandomNumber from '../utils.js';
 
 const gameTask = 'What is the result of the expression?';
 
-const questionAndAnswer = () => {
-  const x = Math.round(100 * Math.random());
-  const y = Math.round(100 * Math.random());
-  const z = Math.round(3 * Math.random());
+const generateQuestionAndAnswer = () => {
+  const x = generateRandomNumber(0, 100);
+  const y = generateRandomNumber(0, 100);
+  const z = generateRandomNumber(0, 3);
   let operator = '';
   let rightAnswer = 0;
   switch (z) {
@@ -29,4 +25,4 @@ const questionAndAnswer = () => {
   return [`${x} ${operator} ${y}`, rightAnswer.toString()];
 };
 
-console.log(game(userName, gameTask, questionAndAnswer));
+export { gameTask, generateQuestionAndAnswer };

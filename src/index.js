@@ -6,7 +6,8 @@ const greeting = () => {
   return userName;
 };
 
-const game = (userName, gameTask, questionAndAnswer) => {
+const game = (gameTask, questionAndAnswer) => {
+  const userName = greeting();
   console.log(gameTask);
   for (let i = 0; i < 3; i += 1) {
     const qAndA = questionAndAnswer();
@@ -16,9 +17,11 @@ const game = (userName, gameTask, questionAndAnswer) => {
       console.log('Correct!');
     } else {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${qAndA[1]}".`);
-      return `Let's try again, ${userName}!`;
+      console.log(`Let's try again, ${userName}!`);
+      return '';
     }
   }
-  return `Congratulations, ${userName}!`;
+  console.log(`Congratulations, ${userName}!`);
+  return '';
 };
 export { greeting, game };

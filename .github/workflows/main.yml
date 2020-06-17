@@ -21,6 +21,13 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    # Configures the node version used on GitHub-hosted runners
+    # https://github.com/actions/setup-node
+    - uses: actions/setup-node@v1
+    # The Node.js version to configure
+      with:
+      node-version: '14'
+      run: node -v
     
     # Install and build project
     - name: npm install, build
