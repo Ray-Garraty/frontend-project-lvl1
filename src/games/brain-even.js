@@ -12,4 +12,4 @@ const generateQuestionAndAnswer = () => {
 };
 
 const launchBrainEvenGame = () => runGame(gameTask, generateQuestionAndAnswer);
-export { launchBrainEvenGame };
+export default launchBrainEvenGame;

@@ -19,4 +19,4 @@ const generateQuestionAndAnswer = () => {
 };
 
 const launchBrainPrimeGame = () => runGame(gameTask, generateQuestionAndAnswer);
-export { launchBrainPrimeGame };
+export default launchBrainPrimeGame;

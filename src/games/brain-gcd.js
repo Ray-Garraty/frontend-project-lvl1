@@ -22,4 +22,4 @@ const generateQuestionAndAnswer = () => {
 };
 
 const launchBrainGcdGame = () => runGame(gameTask, generateQuestionAndAnswer);
-export { launchBrainGcdGame };
+export default launchBrainGcdGame;

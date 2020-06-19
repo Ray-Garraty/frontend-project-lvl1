@@ -27,4 +27,4 @@ const generateQuestionAndAnswer = () => {
 };
 
 const launchBrainCalcGame = () => runGame(gameTask, generateQuestionAndAnswer);
-export { launchBrainCalcGame };
+export default launchBrainCalcGame;
