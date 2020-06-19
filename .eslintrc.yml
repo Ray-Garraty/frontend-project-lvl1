@@ -1,7 +1,4 @@
 ---
-
-plugins:
-
 # https://eslint.org/docs/user-guide/configuring#specifying-environments
 env:
   node: true
