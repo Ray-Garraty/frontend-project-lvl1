@@ -3,18 +3,27 @@ import generateRandomNumber from '../utils.js';
 
 const gameTask = 'What number is missing in the progression?';
 
-const generateQuestionAndAnswer = () => {
-  let number = generateRandomNumber(0, 10);
-  const shift = generateRandomNumber(1, 10);
-  const emptyPosition = generateRandomNumber(0, 9);
-  const numbers = [];
-  for (let i = 0; i < 10; i += 1) {
-    numbers.push(number);
-    number += shift;
+const progressionLength = 10;
+
+const generateProgression = (firstElement, diff, length) => {
+  const progression = [];
+  let element = firstElement;
+  for (let i = 0; i < length; i += 1) {
+    progression.push(element);
+    element += diff;
   }
-  const rightAnswer = numbers[emptyPosition];
-  numbers[emptyPosition] = '..';
-  return [numbers.join(' '), rightAnswer.toString()];
+  return progression;
+};
+
+const generateQuestionAndAnswer = () => {
+  const firstElement = generateRandomNumber(1, 10);
+  const diff = generateRandomNumber(1, 10);
+  const progression = generateProgression(firstElement, diff, progressionLength);
+  const hiddenElementIndex = generateRandomNumber(0, progressionLength - 1);
+  const rightAnswer = progression[hiddenElementIndex].toString();
+  progression[hiddenElementIndex] = '..';
+  const question = progression.join(' ');
+  return [question, rightAnswer];
 };
 
 const launchBrainProgressionGame = () => runGame(gameTask, generateQuestionAndAnswer);

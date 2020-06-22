@@ -1,13 +1,13 @@
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/5cc4cd1f65d7ade01af6/maintainability)](https://codeclimate.com/github/Ray-Garraty/frontend-project-lvl1/maintainability)
 
-![](https://github.com/Ray-Garraty/frontend-project-lvl1/workflows/Linter_check/badge.svg)
+[![GitHub Actions](https://github.com/Ray-Garraty/frontend-project-lvl1/workflows/Linter_check/badge.svg)](https://github.com/Ray-Garraty/frontend-project-lvl1/actions)
 
-Video confirming the successful completion of the Step #5: https://asciinema.org/a/339175
+[![asciicast](https://asciinema.org/a/339175.svg)](https://asciinema.org/a/339175)
 
-Video confirming the successful completion of the Step #6: https://asciinema.org/a/339373
+[![asciicast](https://asciinema.org/a/339373.svg)](https://asciinema.org/a/339373)
 
-Video confirming the successful completion of the Step #7: https://asciinema.org/a/XkFGlxuPtWUGTPcdf90jhLHS8
+[![asciicast](https://asciinema.org/a/339554.svg)](https://asciinema.org/a/339554)
 
-Video confirming the successful completion of the Step #8: https://asciinema.org/a/30VJAAg6mORBTgkFqMylItz3z
+[![asciicast](https://asciinema.org/a/339566.svg)](https://asciinema.org/a/339566)
 
-Video confirming the successful completion of the Step #9: https://asciinema.org/a/WzrTExiNIMeIM4L5VAdXgTDd1
+[![asciicast](https://asciinema.org/a/339575.svg)](https://asciinema.org/a/339575)
