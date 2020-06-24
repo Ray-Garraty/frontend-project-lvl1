@@ -7,10 +7,9 @@ const progressionLength = 10;
 
 const generateProgression = (firstElement, diff, length) => {
   const progression = [];
-  let element = firstElement;
   for (let i = 0; i < length; i += 1) {
-    progression.push(element);
-    element += diff;
+    const currentElement = firstElement + i * diff;
+    progression.push(currentElement);
   }
   return progression;
 };

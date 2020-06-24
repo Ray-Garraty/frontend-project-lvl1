@@ -16,8 +16,9 @@ const isPrime = (n) => {
 };
 
 const generateQuestionAndAnswer = () => {
-  const question = generateRandomNumber(2, 100);
-  const rightAnswer = isPrime(question) ? 'yes' : 'no';
+  const numberForQuestion = generateRandomNumber(2, 100);
+  const question = numberForQuestion.toString();
+  const rightAnswer = isPrime(numberForQuestion) ? 'yes' : 'no';
   return [question, rightAnswer];
 };
 
