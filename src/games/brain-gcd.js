@@ -3,15 +3,7 @@ import generateRandomNumber from '../utils.js';
 
 const gameTask = 'Find the greatest common divisor of given numbers.';
 
-const findGcd = (x, y) => {
-  let gcd = Math.min(x, y);
-  while (gcd > 1) {
-    if (x % gcd !== 0 || y % gcd !== 0) {
-      gcd -= 1;
-    } else break;
-  }
-  return gcd;
-};
+const findGcd = (x, y) => (y === 0 ? x : findGcd(y, x % y));
 
 const generateQuestionAndAnswer = () => {
   const x = generateRandomNumber(1, 100);
